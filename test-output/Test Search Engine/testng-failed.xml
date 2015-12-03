@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Search Engine]">
+  <parameter name="baidu_se_para_1" value="/baidu_se_para_1.xml"/>
+  <parameter name="google_se_para_1" value="/google_se_para_1.xml"/>
+  <parameter name="google_se_para_2" value="/google_se_para_2.xml"/>
+  <parameter name="bing_se_para_1" value="/bing_se_para_1.xml"/>
+  <test name="Test Google(failed)">
+    <classes>
+      <class name="tse.testCases.TestGoogleTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+          <include name="testGoogle_1" invocation-numbers="0"/>
+          <include name="testGoogle_2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tse.testCases.TestGoogleTestCase -->
+      <class name="tse.testCases.TestBaiduTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBaiduTestCase -->
+      <class name="tse.testCases.TestBingTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBingTestCase -->
+    </classes>
+  </test> <!-- Test Google(failed) -->
+</suite> <!-- Failed suite [Test Search Engine] -->

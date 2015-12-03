@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <parameter name="txt-id" value="q"/>
+  <parameter name="btn-id" value="btnK"/>
+  <parameter name="query-string" value="developerworks"/>
+  <parameter name="verify-String" value="developerWorks 中国"/>
+  <parameter name="url" value="http://www.google.com/"/>
+  <test name="Default test(failed)">
+    <classes>
+      <class name="tse.testCases.TestSearchEngine">
+        <methods>
+          <include name="testGoogle" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tse.testCases.TestSearchEngine -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
